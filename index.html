@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portal Helpdesk - User Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header role="banner" class="container">
+      <div class="header-inner">
+        <div class="logo" aria-label="Logo Portal Helpdesk BMKG">
+          <img src="img/Logo_BMKG.png" alt="Logo BMKG" class="logo-img" />
+          <div class="logo-text">
+            Portal Helpdesk
+            <small>Badan Meteorologi, Klimatologi dan Geofisika</small>
+          </div>
+        </div>
+        <nav role="navigation" aria-label="User Main menu">
+          <a href="#" class="nav-link" aria-current="false"
+            >Permintaan yang masih terbuka</a
+          >
+          <a
+            href="#"
+            class="nav-link active"
+            aria-current="page"
+            aria-label="Buat permintaan baru menu item"
+          >
+            <span class="material-icons" aria-hidden="true"
+              >add_circle_outline</span
+            >
+            Buat permintaan baru
+          </a>
+          <a href="#" class="nav-link" aria-current="false"
+            >Permintaan yang telah ditutup</a
+          >
+          <a href="#" class="nav-link">FAQ</a>
+          <a href="#" class="nav-link">Rubah Password Saya</a>
+          <a href="#" class="nav-link">Terputus</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container" role="main">
+      <!-- Statistik -->
+      <section class="stats" aria-label="Informasi statistik permintaan">
+        <article
+          class="stat-card"
+          role="region"
+          aria-labelledby="stat-open-req"
+        >
+          <span class="material-icons stat-icon" aria-hidden="true"
+            >pending_actions</span
+          >
+          <div>
+            <div id="stat-open-req" class="stat-info">5</div>
+            <div class="stat-label">Permintaan Terbuka</div>
+          </div>
+        </article>
+        <article
+          class="stat-card"
+          role="region"
+          aria-labelledby="stat-closed-req"
+        >
+          <span class="material-icons stat-icon" aria-hidden="true"
+            >check_circle_outline</span
+          >
+          <div>
+            <div id="stat-closed-req" class="stat-info">12</div>
+            <div class="stat-label">Permintaan Selesai</div>
+          </div>
+        </article>
+        <article
+          class="stat-card"
+          role="region"
+          aria-labelledby="stat-pending-req"
+        >
+          <span class="material-icons stat-icon" aria-hidden="true"
+            >hourglass_top</span
+          >
+          <div>
+            <div id="stat-pending-req" class="stat-info">3</div>
+            <div class="stat-label">Menunggu Respon</div>
+          </div>
+        </article>
+      </section>
+      <!-- Daftar permintaan terbuka -->
+      <section
+        class="requests-section"
+        aria-label="Permintaan saya yang masih terbuka"
+      >
+        <h2 class="section-title">Permintaan saya yang masih terbuka</h2>
+        <ul class="requests-list" role="list">
+          <li>Permintaan koneksi internet di lab IT - status: Dalam proses</li>
+          <li>
+            Permintaan update software monitoring - status: Menunggu approval
+          </li>
+          <li>Permintaan akses data cuaca - status: Dalam proses</li>
+        </ul>
+      </section>
+      <!-- Sidebar info tambahan -->
+      <aside aria-label="Informasi tambahan user dan FAQ">
+        <h3>Informasi User</h3>
+        <p>Nama: Budi Santoso</p>
+        <p>Jabatan: Analis Cuaca</p>
+        <p>Email: budi.santoso@example.com</p>
+        <h3>Statistik Layanan</h3>
+        <p>Total Permintaan: 20</p>
+        <p>Permintaan Terbuka: 5</p>
+        <p>Permintaan Selesai: 12</p>
+        <h3>FAQ Singkat</h3>
+        <p>
+          Bagaimana cara buat permintaan baru? Klik menu "Buat permintaan baru"
+          di atas.
+        </p>
+      </aside>
+    </main>
+    <footer role="contentinfo">
+      &copy; 2024 Badan Meteorologi, Klimatologi, dan Geofisika. All rights
+      reserved.
+    </footer>
+  </body>
+</html>
